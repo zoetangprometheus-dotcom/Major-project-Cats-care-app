@@ -28,15 +28,15 @@ function MetricCard({
   detail: string;
 }) {
   return (
-    <Card className="flex h-[150px] min-w-0 flex-col px-[14px] py-[14px]">
-      <IconBubble className="mb-[10px] h-[34px] w-[34px]">{icon}</IconBubble>
+    <Card className="flex h-[142px] min-w-0 flex-col px-[12px] py-[12px]">
+      <IconBubble className="mb-[10px] h-[32px] w-[32px]">{icon}</IconBubble>
       <p className="text-[12px] leading-none text-ink-500">{title}</p>
-      <div className="mt-[7px] break-keep text-[21px] font-medium leading-[1.08] tracking-[-0.05em] text-ink-900">
+      <div className="mt-[8px] whitespace-nowrap text-[20px] font-semibold leading-none tracking-[-0.04em] text-ink-900">
         {value}
       </div>
-      <p className="mt-auto flex min-w-0 items-start gap-[5px] text-[11px] leading-[1.25] text-ink-500">
-        <span className="mt-[3px] h-[7px] w-[7px] shrink-0 rounded-full bg-[#ffad0a]" />
-        <span className="min-w-0 break-keep">{detail}</span>
+      <p className="mt-auto flex min-w-0 items-center gap-[5px] text-[11px] leading-none text-ink-300">
+        <span className="h-[7px] w-[7px] shrink-0 rounded-full bg-[#ffad0a]" />
+        <span className="min-w-0 whitespace-nowrap">{detail}</span>
       </p>
     </Card>
   );
@@ -95,8 +95,8 @@ export function Home({ onNavigate }: HomeProps) {
       <section className="relative mt-[22px] h-[260px]">
         <div className="absolute left-[7px] top-[80px] z-10">
           <p className="text-[14px] text-ink-500">当前状态</p>
-          <h2 className="mt-[15px] inline-flex items-center gap-[6px] text-[28px] font-medium tracking-[-0.06em] text-citrus-500">
-            平稳 <span className="mt-[2px] h-[8px] w-[8px] rounded-full bg-citrus-500" />
+          <h2 className="mt-[15px] inline-flex items-center gap-[6px] text-[28px] font-medium tracking-[-0.06em] text-[#7FA36B]">
+            平稳 <span className="mt-[2px] h-[8px] w-[8px] rounded-full bg-[#7FA36B]" />
           </h2>
           <p className="mt-[21px] text-[13px] leading-[1.9] text-ink-500">
             梆梆看起来很放松，
@@ -114,20 +114,20 @@ export function Home({ onNavigate }: HomeProps) {
           value={
             <>
               <span className="text-[24px]">126</span>{" "}
-              <span className="ml-[1px] text-[11px] font-normal tracking-normal text-ink-500">bpm</span>
+              <span className="ml-[1px] align-baseline text-[11px] font-normal tracking-normal text-ink-500">bpm</span>
             </>
           }
-          detail="100–140 正常范围"
+          detail="正常范围"
         />
         <MetricCard
           icon={<Cat className="h-[23px] w-[23px]" strokeWidth={1.8} />}
-          title="活动状态"
-          value="正常活动"
+          title="活动"
+          value="正常"
           detail="活动水平正常"
         />
         <MetricCard
           icon={<Moon className="h-[23px] w-[23px]" strokeWidth={1.8} />}
-          title="休息状态"
+          title="休息"
           value="正在休息"
           detail="今日休息良好"
         />

@@ -49,8 +49,8 @@ function PressureBars() {
         </div>
         <div className="absolute bottom-[26px] left-[30px] right-[0px] h-px bg-[#eee4da]" />
         <div className="absolute left-[38px] top-[11px] h-[94px] w-px bg-[#eee4da]" />
-        <div className="absolute bottom-[26px] left-[145px] h-[99px] w-[178px] rounded-[8px] border border-dashed border-citrus-300 bg-transparent">
-          <div className="absolute left-[24px] top-[-10px] flex items-center gap-[5px] whitespace-nowrap rounded-full bg-white/75 px-[4px] py-[1px] text-[10px] font-medium text-citrus-500 backdrop-blur-sm">
+        <div className="absolute bottom-[26px] left-[118px] h-[99px] w-[128px] rounded-[8px] border border-dashed border-citrus-300 bg-transparent">
+          <div className="absolute left-[10px] top-[-10px] flex items-center gap-[5px] whitespace-nowrap rounded-full bg-white/75 px-[4px] py-[1px] text-[10px] font-medium text-citrus-500 backdrop-blur-sm">
             <CalendarDays className="h-[15px] w-[15px]" />
             工作时间段（9:00–18:00）
           </div>
@@ -63,7 +63,7 @@ function PressureBars() {
               <span
                 key={`${height}-${index}`}
                 className={`w-[7px] rounded-t-[3px] ${
-                  isHigh ? "bg-citrus-500" : isMedium ? "bg-[#ffc073]" : "bg-[#fff0e4]"
+                  isHigh ? "bg-[#ef6a5a]" : isMedium ? "bg-[#ffc073]" : "bg-[#fff0e4]"
                 }`}
                 style={{ height }}
               />
@@ -88,7 +88,7 @@ function PressureBars() {
           中等压力
         </span>
         <span className="flex items-center gap-[8px]">
-          <i className="h-[10px] w-[10px] rounded-[3px] bg-citrus-500" />
+          <i className="h-[10px] w-[10px] rounded-[3px] bg-[#ef6a5a]" />
           高压力
         </span>
       </div>
@@ -168,7 +168,7 @@ function ObservationTile({
         <h4 className="whitespace-nowrap text-[12px] font-semibold text-ink-900">{title}</h4>
       </div>
       <div className="flex flex-1 flex-col items-center justify-center">
-        <p className="text-[15px] font-semibold text-ink-900">{result}</p>
+        <p className="text-[15px] font-semibold text-[#7FA36B]">{result}</p>
         <p className="mt-[4px] whitespace-nowrap text-[10px] leading-[1.25] text-ink-500">{detail}</p>
       </div>
     </div>
@@ -197,7 +197,6 @@ export function TrendReport() {
     <div className="pt-[42px]">
       <header className="flex items-center justify-between">
         <h1 className="text-[24px] font-bold tracking-[-0.05em] text-ink-900">趋势报告</h1>
-        <CalendarDays className="h-[25px] w-[25px] text-ink-900" strokeWidth={1.8} />
       </header>
       <SegmentControl />
 
@@ -209,8 +208,8 @@ export function TrendReport() {
           <h2 className="text-[16px] font-semibold text-ink-900">本周概览</h2>
         </div>
         <div className="relative z-10 mt-[26px] max-w-[172px]">
-          <p className="inline-flex items-center gap-[7px] text-[28px] font-semibold tracking-[-0.06em] text-citrus-500">
-            整体稳定 <span className="mt-[2px] h-[8px] w-[8px] rounded-full bg-citrus-500" />
+          <p className="inline-flex items-center gap-[7px] text-[28px] font-semibold tracking-[-0.06em] text-[#7FA36B]">
+            整体稳定
           </p>
           <p className="mt-[20px] text-[12px] leading-[1.75] text-ink-500">
             梆梆本周整体状态以平稳为主。

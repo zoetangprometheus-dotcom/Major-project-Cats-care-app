@@ -114,17 +114,17 @@ export function SoothingControl() {
           </IconBubble>
           <h2 className="text-[18px] font-semibold text-ink-900">当前推荐</h2>
         </div>
-        <p className="relative z-10 mt-[20px] max-w-[205px] text-[22px] font-medium leading-[1.35] tracking-[-0.05em] text-citrus-500">
-          梆梆当前状态平稳。
+        <p className="relative z-10 mt-[20px] max-w-[176px] text-[22px] font-medium leading-[1.35] tracking-[-0.05em] text-[#7FA36B]">
+          梆梆当前状态平稳
         </p>
-        <p className="relative z-10 mt-[8px] max-w-[210px] text-[13px] leading-[1.6] text-ink-500">
+        <p className="relative z-10 mt-[8px] max-w-[178px] text-[13px] leading-[1.6] text-ink-500">
           暂无需开启安抚，可保持设备待机。
         </p>
         <button
           type="button"
           className="relative z-10 mt-[16px] h-[34px] rounded-full border border-citrus-500 px-[18px] text-[13px] font-medium text-citrus-500"
         >
-          保持待机
+          待机中
         </button>
         <BangBangCatImage variant="card" className="absolute bottom-[6px] right-[6px] h-[145px] w-[145px]" />
       </Card>
@@ -229,7 +229,7 @@ export function SoothingControl() {
             <div>
               <p className="text-[13px] text-ink-900">设备温度</p>
               <p className="mt-[3px] text-[22px] font-medium text-citrus-500">38°C</p>
-              <p className="mt-[2px] flex items-center gap-[5px] text-[11px] text-ink-500">
+              <p className="mt-[2px] flex items-center gap-[5px] whitespace-nowrap text-[11px] text-ink-500">
                 <span className="h-[6px] w-[6px] rounded-full bg-green-500" />
                 安全范围内
               </p>

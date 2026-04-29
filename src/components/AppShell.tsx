@@ -12,21 +12,26 @@ type AppShellProps = {
 
 function StatusBar() {
   return (
-    <div className="absolute left-0 right-0 top-0 z-20 flex h-[46px] items-center justify-between px-[28px] pt-[11px] text-[15px] font-semibold text-black">
-      <span>9:41</span>
-      <div className="flex items-center gap-[7px]">
-        <div className="flex h-[14px] items-end gap-[2px]">
-          {[6, 8, 11, 14].map((height) => (
-            <span key={height} className="w-[3px] rounded-full bg-black" style={{ height }} />
+    <div className="absolute left-0 right-0 top-0 z-20 flex h-[46px] items-center justify-between px-[27px] pt-[10px] text-black">
+      <div className="flex h-[24px] min-w-[56px] items-center justify-center rounded-full text-[15px] font-semibold tracking-[-0.02em]">
+        9:41
+      </div>
+      <div className="flex h-[24px] items-center gap-[7px]">
+        <div className="flex h-[13px] items-end gap-[2px]" aria-hidden="true">
+          {[4, 7, 10, 13].map((height) => (
+            <span key={height} className="w-[3px] rounded-[2px] bg-black" style={{ height }} />
           ))}
         </div>
-        <div className="relative h-[14px] w-[18px]">
-          <span className="absolute left-0 top-[1px] h-[14px] w-[18px] rounded-t-full border-[3px] border-b-0 border-black" />
-          <span className="absolute left-[5px] top-[6px] h-[8px] w-[8px] rounded-t-full border-[3px] border-b-0 border-black" />
+        <div className="relative h-[13px] w-[17px]" aria-hidden="true">
+          <span className="absolute bottom-[1px] left-0 h-[13px] w-[17px] rounded-t-full border-[2px] border-b-0 border-black" />
+          <span className="absolute bottom-[1px] left-[4px] h-[9px] w-[9px] rounded-t-full border-[2px] border-b-0 border-black" />
           <span className="absolute bottom-0 left-[7px] h-[3px] w-[3px] rounded-full bg-black" />
         </div>
-        <div className="h-[12px] w-[24px] rounded-[3px] border-[2px] border-black p-[1px]">
-          <div className="h-full w-[17px] rounded-[1px] bg-black" />
+        <div className="relative h-[12px] w-[25px]" aria-hidden="true">
+          <div className="h-[12px] w-[22px] rounded-[3px] border-[1.6px] border-black p-[1.2px]">
+            <div className="h-full w-[16px] rounded-[1.5px] bg-black" />
+          </div>
+          <span className="absolute right-0 top-[4px] h-[4px] w-[2px] rounded-r-sm bg-black" />
         </div>
       </div>
     </div>
