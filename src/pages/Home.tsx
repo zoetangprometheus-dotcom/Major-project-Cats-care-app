@@ -93,7 +93,7 @@ export function Home({ onNavigate }: HomeProps) {
       </header>
 
       <section className="relative mt-[22px] h-[260px]">
-        <div className="absolute left-[7px] top-[96px] z-10">
+        <div className="absolute left-[7px] top-[80px] z-10">
           <p className="text-[14px] text-ink-500">当前状态</p>
           <h2 className="mt-[15px] inline-flex items-center gap-[6px] text-[28px] font-medium tracking-[-0.06em] text-citrus-500">
             平稳 <span className="mt-[2px] h-[8px] w-[8px] rounded-full bg-citrus-500" />

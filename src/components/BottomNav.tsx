@@ -29,7 +29,7 @@ export function BottomNav({ activeTab, onNavigate }: BottomNavProps) {
             aria-label={item.label}
           >
             <Icon strokeWidth={1.9} className="h-[24px] w-[24px]" />
-            <span className="text-[12px] font-medium leading-none">{item.label}</span>
+            <span className="text-[11px] font-medium leading-none">{item.label}</span>
           </button>
         );
       })}

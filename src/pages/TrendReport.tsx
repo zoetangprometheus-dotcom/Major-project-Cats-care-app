@@ -50,7 +50,7 @@ function PressureBars() {
         <div className="absolute bottom-[26px] left-[30px] right-[0px] h-px bg-[#eee4da]" />
         <div className="absolute left-[38px] top-[11px] h-[94px] w-px bg-[#eee4da]" />
         <div className="absolute bottom-[26px] left-[145px] h-[99px] w-[178px] rounded-[8px] border border-dashed border-citrus-300 bg-transparent">
-          <div className="absolute left-[24px] top-[6px] flex items-center gap-[5px] whitespace-nowrap rounded-full bg-white/70 px-[4px] py-[1px] text-[10px] font-medium text-citrus-500 backdrop-blur-sm">
+          <div className="absolute left-[24px] top-[-10px] flex items-center gap-[5px] whitespace-nowrap rounded-full bg-white/75 px-[4px] py-[1px] text-[10px] font-medium text-citrus-500 backdrop-blur-sm">
             <CalendarDays className="h-[15px] w-[15px]" />
             工作时间段（9:00–18:00）
           </div>
