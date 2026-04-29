@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111111;
+  background: #f4efe7;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.phone-canvas {
+  width: min(100vw, 393px);
+  height: min(100vh, 852px);
+}
+
+@media (min-height: 852px) {
+  .phone-canvas {
+    height: 852px;
+  }
+}
+
+.app-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.app-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 246, 235, 0.92);
+  box-shadow: 0 16px 45px rgba(214, 184, 145, 0.14);
+  backdrop-filter: blur(18px);
+}
+
+.icon-bubble {
+  background: rgba(255, 245, 232, 0.96);
+}
+
+.range-track {
+  background: linear-gradient(90deg, #fed7aa 0%, #ff8a00 62%, #ffe3bf 100%);
+}
